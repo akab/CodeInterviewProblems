@@ -13,23 +13,25 @@ Input: A = [1,2,3,4,5,6,10], target = 9
 Output: [-1, -1]
 """
 
-class Solution: 
-  def getRange(self, arr, target):
-    first = -1
-    last = -1
-    for i in range(len(arr)):
-    	if arr[i] == target and first == -1:
-    		first = i
-    	if arr[i] == target:
-    		last = i
 
-    if last == -1:
-    	last = first
+class Solution:
+    def getRange(self, arr, target):
+        first = -1
+        last = -1
+        for i in range(len(arr)):
+            if arr[i] == target and first == -1:
+                first = i
+            if arr[i] == target:
+                last = i
 
-    return first, last
-  
+        if last == -1:
+            last = first
+
+        return first, last
+
+
 # Test program 
-arr = [1, 2, 2, 2, 2, 3, 4, 7, 8, 8] 
+arr = [1, 2, 2, 2, 2, 3, 4, 7, 8, 8]
 x = 2
 print(Solution().getRange(arr, x))
 # [1, 4]

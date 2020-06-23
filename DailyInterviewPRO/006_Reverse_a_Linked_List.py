@@ -3,28 +3,33 @@ Example:
 Input: 4 -> 3 -> 2 -> 1 -> 0 -> NULL
 Output: 0 -> 1 -> 2 -> 3 -> 4 -> NULL
 """
+
+
 class ListNode(object):
-  def __init__(self, x):
-    self.val = x
-    self.next = None
-  
-  # Function to print the list
-  def printList(self):
-    node = self
-    output = '' 
-    while node != None:
-      output += str(node.val)
-      output += " "
-      node = node.next
-    print(output)
+    def __init__(self, x):
+        self.val = x
+        self.next = None
 
-  # Iterative Solution
-  def reverseIteratively(self, head):
-    # Implement this.
+    # Function to print the list
+    def printList(self):
+        node = self
+        output = ''
+        while node != None:
+            output += str(node.val)
+            output += " "
+            node = node.next
+        print(output)
 
-  # Recursive Solution      
-  def reverseRecursively(self, head):
-    # Implement this.
+    # Iterative Solution
+    def reverseIteratively(self, head):
+        # Implement this.
+        pass
+
+    # Recursive Solution
+    def reverseRecursively(self, head):
+        # Implement this.
+        pass
+
 
 # Test Program
 # Initialize the test list: 
@@ -42,7 +47,7 @@ print("Initial list: ")
 testHead.printList()
 # 4 3 2 1 0
 testHead.reverseIteratively(testHead)
-#testHead.reverseRecursively(testHead)
+# testHead.reverseRecursively(testHead)
 print("List after reversal: ")
 testTail.printList()
 # 0 1 2 3 4
