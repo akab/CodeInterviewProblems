@@ -12,16 +12,18 @@ Example:
 This input should return the order that we need to take these courses: 
  ['CSC100', 'CSC200', 'CSCS300']
 
-Here's your starting point:
 """
 
+
 def courses_to_take(course_to_prereqs):
-  # Fill this in.
+    # Fill this in.
+    pass
+
 
 courses = {
-  'CSC300': ['CSC100', 'CSC200'], 
-  'CSC200': ['CSC100'], 
-  'CSC100': []
+    'CSC300': ['CSC100', 'CSC200'],
+    'CSC200': ['CSC100'],
+    'CSC100': []
 }
-print courses_to_take(courses)
+print(courses_to_take(courses))
 # ['CSC100', 'CSC200', 'CSC300']
