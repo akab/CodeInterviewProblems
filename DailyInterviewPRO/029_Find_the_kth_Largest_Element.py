@@ -6,9 +6,12 @@ Here is a starting point:
 
 
 def findKthLargest(nums, k):
-    pass
-    # Fill this in.
+    if k > len(nums) or k - 1 < 0:
+        return -1
+    else:
+        sort = sorted(nums)[::-1]
+        return sort[k - 1]
 
 
-print(findKthLargest([3, 5, 2, 4, 6, 8], 3))
+print(findKthLargest([3, 5, 2, 4, 6, 8], 1))
 # 5
